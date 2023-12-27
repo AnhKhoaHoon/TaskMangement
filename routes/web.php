@@ -18,11 +18,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 //! Route cho auth
-Route::get('login',[LoginController::class,'ShowLoginForm'])->name('login.');
-Route::post('login',[LoginController::class,'Login'])->name('login');
+Route::get('login',[LoginController::class,'showLoginForm'])->name('login');
+Route::post('login',[LoginController::class,'login'])->name('login');
 
-Route::get('register',[RegisterController::class,'ShowRegisterForm'])->name('register');
-Route::post('register',[RegisterController::class,'Register'])->name('register');
+Route::get('register',[RegisterController::class,'showRegisterForm'])->name('register');
+Route::post('register',[RegisterController::class,'register'])->name('register');
 
 
 

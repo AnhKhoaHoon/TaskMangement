@@ -19,6 +19,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware(['check_login'])->group(function () {
     Route::prefix('admin')->name('admin.')->group(function () {
-        Route::get('dashboard', [DashboardController::class, 'dashboard'])->name('dashboard.');
+        Route::get('dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
     });
 });
